@@ -17,6 +17,18 @@ namespace C0732169
             StudentInformation _John = new StudentInformation("John", 2.0, 10);
             StudentInformation _Mark = new StudentInformation("Mark", 0.2, 3);
             StudentInformation _Steve = new StudentInformation("Steve", 2.9, 20);
+
+            var StudentList = new List<StudentInformation>();
+            StudentList.Add(_Mary);
+            StudentList.Add(_John);
+            StudentList.Add(_Mark);
+            StudentList.Add(_Steve);
+
+            foreach (var student in StudentList)
+            {
+                Console.WriteLine(student.Name);
+            }
+
         }
     }
 
@@ -32,10 +44,8 @@ namespace C0732169
             Name = aName;
             GPA = cGPA;
             Attendance = dAttandence;
-
+    
         }
-
-
     }
 
 }
